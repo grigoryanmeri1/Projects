@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --black: #2b2a2c;
+    --white: #fff;
+    --grey: #717072;
+}
+
+*{
+    margin: 0; padding: 0;
+    border: none; outline: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .3s all linear;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*::selection{
+    background: var(--black);
+    color: var(--white);
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn{
+    width: 200px;
+    border: 1px solid var(--grey);
+    background: none;
+    padding: 20px 25px;
+    border-radius: 27px;
+    font-size: 16px;
+    color: var(--grey);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--grey);
+    color: var(--white);
+}
+
+.heading{
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+/* ........header....... */
+
+header .container .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+}
+
+header .container .inner .user{
+    display: flex;
+}
+
+header .container .inner .user img{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+header .container .inner .user .content h3{
+    font-size: 16px;
+    color: var(--black);
+    margin-bottom: 5px;
+}
+
+header .container .inner .user .content p{
+    font-size: 12px;
+    color: #6a696b;
+
+}
+
+header .container .inner .navbar a{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--black);
+    text-transform: uppercase;
+    margin-left: 33px;
+}
+
+header .container .inner .navbar a:hover{
+    border-bottom: 3px solid var(--black);
+    padding-bottom: 5px;
+}
+
+/* .........home......... */
+
+.home .container .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #cecece;
+    padding-bottom: 12px;
+}
+
+.home .container .inner .content h2{
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--black);
+    margin-bottom: 21px;
+}
+
+.home .container .inner .content h1{
+    font-size: 45px;
+    color: var(--black);
+    margin-bottom: 21px;
+}
+
+.home .container .inner .content  p{
+    font-size: 18px;
+    color: var(--grey);
+    margin-bottom: 30px;
+}
+
+.home .container .inner .content .icons{
+    display: flex;
+    margin-bottom: 42px;
+}
+
+.home .container .inner .content .icons a{
+    margin-right: 11px;
+}
+
+/* ........work........ */
+
+.work .container .heading{
+    margin-top: 51px;
+    margin-bottom: 21px;
+}
+
+.work .container .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work .container .inner .box{
+    box-shadow: 0 0 5px var(--grey);
+    border-radius: 10px;
+}
+
+.work .container .inner .box:hover{
+    box-shadow: 0 0 10px var(--grey);
+    cursor: pointer;
+}
+
+.work .container .inner .box .content{
+    padding: 15px;
+}
+
+.work .container .inner .box .content h4{
+    font-size: 12px;
+    color: var(--black);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.work .container .inner .box .content .text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.work .container .inner .box .content .text p{
+    font-size: 16px;
+    color: var(--black);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* ......about...... */
+
+.about .container .inner{
+    margin-top: 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 110px;
+}
+
+.about .container .inner .content{
+    margin-left: 121px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.about .container .inner .content h5{
+    margin-top: 79px;
+    font-size: 45px;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.about .container .inner .content h4{
+    font-size: 92px;
+    color: #dedede;
+    text-transform: uppercase;
+}
+
+.about .container .inner .content p{
+    color: var(--grey);
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+
+
+
+
+
+/* ....... review..... */
+
+
+.review{
+    background: url(../images/reviews.png) no-repeat center #332f30;
+    background-size: cover;
+    /* background-image: url(../images/reviews.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #332f30; */
+    margin-top: 112px;
+    padding: 50px 0;
+}
+
+.review .container .inner{
+    text-align: center;
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.review .container .inner .text{
+    margin-bottom: 21px;
+}
+
+.review .container .inner .text p{
+    color: var(--white);
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 100;
+}
+
+
+.review .container .inner .box{
+    position: absolute;
+    left: calc(50% - 52px);
+}
+
+.review .container .inner .box h5{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--black);
+    margin-top: 13px;
+}
+
+.review .container .inner .box p{
+    font-size: 14px;
+    color: var(--grey);
+    font-style: italic;
+    margin-top: 7px;
+    margin-bottom: 11px;
+}
+
+.review .container .inner .box .stars .unactive{
+    opacity: .5;
+}
+
+/* .........courses......... */
+
+
+.courses{
+    margin-top: 236px;
+}
+
+.courses .container .text{
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 19px;
+    font-size: 18px;
+    color: var(--grey);
+    font-weight: 300;
+}
+
+.courses .container .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.courses .container .inner .box .content h5{
+    font-size: 18px;
+    color: var(--black);
+    margin-top: 26px;
+}
+
+.courses .container .inner .box .content h6{
+    font-size: 12px;
+    color: var(--black);
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.courses .container .inner .box .content p{
+    font-size: 12px;
+    color: var(--grey);
+    font-weight: 300;
+    margin-top: 29px;
+    margin-bottom: 38px;
+    line-height: 29px;
+}
+
+.courses .container .inner .box .content .btn{
+    padding: 10px 15px;
+    border: 2px solid var(--grey);
+    width: 130px;
+    font-size: 14px;
+    color: var(--grey);
+}
+
+.courses .container .inner .box .content .btn:hover{
+    color: var(--white);
+}
+
+.courses .container .link{
+    text-align: end;
+    margin-top: 19px;
+}
+
+.courses .container .link a{
+    color: var(--grey);
+    text-decoration: underline;
+}
+
+/* .....footer..... */
+
+footer{
+    background: var(--black);
+    margin-top: 127px;
+}
+
+footer .container .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+footer .container .inner .info .content{
+    display: flex;
+    align-items: center;
+}
+
+footer .container .inner .info .content p{
+    font-size: 14px;
+    color: #8d8d8e;
+    border-right: 1px solid #8d8d8e;
+    padding-right: 22px;
+}
+
+footer .container .inner .info .content .icons{
+    display: flex;
+}
+
+
+footer .container .inner .info .content .icons a{
+     margin-left: 15px;
+}
+
+footer .container .inner .navbar a{
+    font-size: 14px;
+    color: #8d8d8e;
+    margin-left: 18px;
+}
+
+footer .container .inner .navbar a:hover{
+    text-decoration: underline;
+}
+
+
+
+@media(max-width: 1200px){
+    .container{
+        padding: 0 3%;
+    }
+    html{
+        font-size: 90%;
+    }
+
+    .work .container .inner .box{
+        width: 31%;
+    }
+
+    .work .container .inner .box img{
+        width: 100%;
+    }
+    .about .container .inner .content{
+        margin-left: 50px;
+    }
+
+    .about .container .inner .content h4{
+        font-size: 60px;
+    }
+
+    .about .container .inner .content  p{
+        line-height: 15px;
+    }
+
+    .courses .container .inner .box{
+        width: 30%;
+    }
+
+    .courses .container .inner .box img{
+        width: 100%;
+    }
+
+
+}
+
+@media(max-width: 1000px){
+    .home .container .inner img{
+        width: 60%;
+        height: 60%;
+    }
+   .home .container .inner .icons a img{
+        width: 100%;
+        height: 100%;
+    } 
+
+    .about .container .inner{
+        padding-right: 50px;
+    }
+
+    .about .container .inner .content h5{
+        font-size: 40px;
+    }
+    .about .container .inner .content p{
+        margin-bottom: 20px;
+    }
+    .courses .container .inner .box .content p{
+        line-height: 20px;
+    }
+}
+
+@media(max-width: 969px){
+    header .container .inner .user{
+        display: none;
+    }
+
+    header .container .inner .navbar{
+        margin: 0 auto;
+    }
+
+   .home .container .inner{
+        margin-top: 50px;
+   }
+    
+   .about .container .inner{
+    margin-top: 20px;
+   } 
+
+   .about .container .inner img{
+        display: none;
+   }
+   .about .container .inner .content p{
+    line-height: 25px;
+   }
+
+  
+}
+
+@media(max-width: 767px){
+   .home .container .inner .content h2{
+    font-size: 25px;
+   }
+   .home .container .inner .content h1{
+    font-size: 34px;
+   }
+   .btn{
+    padding: 12px 8px;
+   }
+   
+   .work .container .inner,
+   .courses .container .inner{
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+
+   .work .container .inner .box,
+   .courses .container .inner .box{
+    width: 80%;
+    margin-bottom: 20px;
+   }
+
+   .about .container .inner .content h5{
+    margin-top: 10px;
+   }
+
+   .about .container .inner .content h4{
+    margin-bottom: 5px;
+   }
+
+}
